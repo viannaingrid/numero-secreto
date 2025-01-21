@@ -1,4 +1,4 @@
-
+let numeroSecreto = numeroAleatorio();
 
 function exibirTexto(tag, texto) {
 
@@ -11,5 +11,9 @@ exibirTexto('h1', 'Jogo do número secreto');
 exibirTexto('p', ' Escolha um número entre 1 e 10');
 
 function verificarChute() {
-    console.log('click');
+    console.log(numeroSecreto);
+}
+
+function numeroAleatorio() {
+   return parseInt(Math.random() * 10 + 1);
 }
